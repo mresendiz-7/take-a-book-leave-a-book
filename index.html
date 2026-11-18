@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Little Book Trail | Ellensburg, WA</title>
+  <meta name="description" content="A treasure map of take-a-book, leave-a-book stands around Ellensburg, Washington.">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts: cottagecore headings, typewriter "inventory" text, and genre fonts for the book photo captions -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=Lora:ital,wght@0,400;0,600;1,400&family=Special+Elite&family=Caveat:wght@500;700&family=Creepster&family=Cinzel:wght@600&family=Playfair+Display:ital,wght@1,600&family=UnifrakturMaguntia&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER / NAVIGATION ========== -->
+  <header class="site-header">
+    <a href="#top" class="logo">
+      <img src="images/favicon.svg" alt="" width="52" height="52">
+      <span>The Little Book Trail</span>
+    </a>
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#story">Our Story</a></li>
+        <li><a href="#map">Trail Map</a></li>
+        <li><a href="#inventory">Book Inventory</a></li>
+        <li><a href="#treasures">Treasures</a></li>
+        <li><a href="#etiquette">Trail Rules</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="eyebrow">Ellensburg, Washington &middot; N 46° 59.8' W 120° 32.9'</p>
+        <h1>Take a book.<br>Leave a book.<br><em>Find a little treasure.</em></h1>
+        <p class="lead">
+          Little free library stands are tucked all over town, from street corners to parks to campus.
+          This is a field guide to finding them, and a love letter to why they matter.
+        </p>
+        <a href="#map" class="button">Start the hunt &rarr;</a>
+      </div>
+      <figure class="hero-art">
+        <img src="images/library-house.svg" alt="Illustration of a little wooden house-shaped book stand on a post, with a clear front showing books, a mug, and a jar of flowers inside.">
+      </figure>
+    </section>
+
+    <!-- ========== PHOTO BREAK 1: taped snapshots ========== -->
+    <section class="photo-break snapshots" aria-label="Book photos">
+      <figure class="snapshot">
+        <img src="https://images.unsplash.com/photo-1773224811488-070c7dce2657?auto=format&fit=crop&w=600&h=600&q=70" alt="A little free library box on a city street, filled with books." loading="lazy">
+        <figcaption>a stand in the wild</figcaption>
+      </figure>
+      <figure class="snapshot">
+        <img src="https://images.unsplash.com/photo-1523865236457-3ae3358a4eaa?auto=format&fit=crop&w=600&h=600&q=70" alt="A glass mug resting on a small stack of books." loading="lazy">
+        <figcaption>a cozy find</figcaption>
+      </figure>
+      <figure class="snapshot">
+        <img src="https://images.unsplash.com/photo-1640270712193-8a2770afcdad?auto=format&fit=crop&w=600&h=600&q=70" alt="An open book with a single flower resting on it." loading="lazy">
+        <figcaption>a little kindness</figcaption>
+      </figure>
+    </section>
+
+    <!-- ========== STORY ========== -->
+    <section id="story" class="story">
+      <h2 class="section-title"><span>Why I Love Them</span></h2>
+
+      <div class="story-grid">
+        <article class="story-card">
+          <p class="card-label">Entry #1 &middot; The First Find</p>
+          <h3>The little house at the end of my street</h3>
+          <p>
+            The first one I came across was on the corner at the end of my street. It stopped me because
+            it was built like a tiny house, with a plexiglass front full of books. Sometimes there were stickers
+            and mugs inside too, random little things that made me feel more connected to my community.
+          </p>
+        </article>
+
+        <article class="story-card">
+          <p class="card-label">Entry #2 &middot; The Book That Hooked Me</p>
+          <h3><span class="font-horror">Pet Sematary</span>, by Stephen King</h3>
+          <p>
+            I started visiting the stands regularly after finding <em>Pet Sematary</em>. I've always loved the creepy
+            side of Stephen King's books. After I finished it, I wanted to go to different stands to find more books,
+            and to start leaving some of my own.
+          </p>
+          <p class="note">Fun fact: the misspelling is on purpose. In the story, kids painted the sign.</p>
+        </article>
+
+        <article class="story-card story-card--vase">
+          <img src="images/flower-vase.svg" alt="A glass jar of wildflowers with a paper tag reading: Have a good day! Please take me home.">
+          <div>
+            <p class="card-label">Entry #3 &middot; The Unexpected</p>
+            <h3>&ldquo;Have a good day, please take me home&rdquo;</h3>
+            <p>
+              Sometimes I find things I really like, and sometimes I find things I never expected. Once it was a
+              vase of flowers with a note asking me to take it home. That's what these stands are really about:
+              strangers leaving small kindnesses for each other.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== MAP ========== -->
+    <section id="map" class="map-section">
+      <h2 class="section-title"><span>The Trail Map</span></h2>
+      <p class="section-intro">Six stands, one loop around town. Follow the dotted trail, or just pick the closest pin.</p>
+      <figure class="map-frame">
+        <img src="images/ellensburg-map.svg" alt="Hand-drawn treasure map of Ellensburg showing six numbered stand locations connected by a dotted trail, with the Yakima River on the west side.">
+        <figcaption>Mock map for a class project. Pins and coordinates are approximate.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ========== PHOTO BREAK 2: wide banner ========== -->
+    <section class="photo-break banner" aria-label="Library shelf photo">
+      <img src="https://images.unsplash.com/photo-1673162802561-dd53ec4be651?auto=format&fit=crop&w=1600&h=600&q=70" alt="Tall wooden shelves packed with books." loading="lazy">
+      <p class="banner-text">Every stand is a tiny library<br><em>waiting to be discovered.</em></p>
+    </section>
+
+    <!-- ========== BOOK INVENTORY (LOCATIONS) ========== -->
+    <section id="inventory" class="inventory">
+      <h2 class="section-title"><span>Book Inventory</span></h2>
+      <p class="section-intro">Every stand gets its own inventory card: where it is, when to go, and what&rsquo;s usually on the shelves.</p>
+
+      <div class="inventory-grid">
+
+        <article class="inventory-card">
+          <header>
+            <span class="inventory-id">LBT-01</span>
+            <h3>The Pearl Street Cottage</h3>
+          </header>
+          <p class="coords">N 46° 59.868' &nbsp; W 120° 32.886'</p>
+          <p class="where">Downtown, near Pearl St &amp; 4th Ave</p>
+          <dl>
+            <dt>Best time</dt><dd>Saturday mornings, after the farmers market crowd</dd>
+            <dt>Usually stocked</dt><dd>Bestsellers, cookbooks, the occasional mug</dd>
+          </dl>
+          <p class="rating">Difficulty <span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span> &nbsp; Terrain <span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span></p>
+          <p class="hint"><strong>Hint:</strong> Look for the red roof between the coffee shop and the bookstore.</p>
+        </article>
+
+        <article class="inventory-card">
+          <header>
+            <span class="inventory-id">LBT-02</span>
+            <h3>Campus Corner Cubby</h3>
+          </header>
+          <p class="coords">N 47° 00.210' &nbsp; W 120° 32.274'</p>
+          <p class="where">Near the CWU campus</p>
+          <dl>
+            <dt>Best time</dt><dd>End of each quarter, when students clear their shelves</dd>
+            <dt>Usually stocked</dt><dd>Classics, textbooks, poetry, sticky notes</dd>
+          </dl>
+          <p class="rating">Difficulty <span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span> &nbsp; Terrain <span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span></p>
+          <p class="hint"><strong>Hint:</strong> Painted like a little blue schoolhouse.</p>
+        </article>
+
+        <article class="inventory-card">
+          <header>
+            <span class="inventory-id">LBT-03</span>
+            <h3>Riverbend Reading Box</h3>
+          </header>
+          <p class="coords">N 46° 59.430' &nbsp; W 120° 35.010'</p>
+          <p class="where">Irene Rinehart Riverfront Park, by the Yakima River</p>
+          <dl>
+            <dt>Best time</dt><dd>Summer evenings</dd>
+            <dt>Usually stocked</dt><dd>Nature guides, adventure novels, kids' picture books</dd>
+          </dl>
+          <p class="rating">Difficulty <span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span> &nbsp; Terrain <span class="stars">&#9733;&#9733;&#9733;&#9734;&#9734;</span></p>
+          <p class="hint"><strong>Hint:</strong> Follow the trail toward the water. It's on a cedar post.</p>
+        </article>
+
+        <article class="inventory-card">
+          <header>
+            <span class="inventory-id">LBT-04</span>
+            <h3>The Mountain View Hutch</h3>
+          </header>
+          <p class="coords">N 46° 59.328' &nbsp; W 120° 33.360'</p>
+          <p class="where">Mountain View Park, south side of town</p>
+          <dl>
+            <dt>Best time</dt><dd>Weekday afternoons</dd>
+            <dt>Usually stocked</dt><dd>Horror and mystery. A great spot for Stephen King fans</dd>
+          </dl>
+          <p class="rating">Difficulty <span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span> &nbsp; Terrain <span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></p>
+          <p class="hint"><strong>Hint:</strong> Painted dark green, next to the playground.</p>
+        </article>
+
+        <article class="inventory-card">
+          <header>
+            <span class="inventory-id">LBT-05</span>
+            <h3>Reed Park Book Nook</h3>
+          </header>
+          <p class="coords">N 47° 00.060' &nbsp; W 120° 32.550'</p>
+          <p class="where">Reed Park, north of downtown</p>
+          <dl>
+            <dt>Best time</dt><dd>Sunday mornings, when it's usually freshly restocked</dd>
+            <dt>Usually stocked</dt><dd>Romance, cozy mysteries, little gifts like flowers and stickers</dd>
+          </dl>
+          <p class="rating">Difficulty <span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span> &nbsp; Terrain <span class="stars">&#9733;&#9734;&#9734;&#9734;&#9734;</span></p>
+          <p class="hint"><strong>Hint:</strong> Look for the window box full of fake daisies.</p>
+        </article>
+
+        <article class="inventory-card">
+          <header>
+            <span class="inventory-id">LBT-06</span>
+            <h3>The Rodeo Stop</h3>
+          </header>
+          <p class="coords">N 46° 59.880' &nbsp; W 120° 31.980'</p>
+          <p class="where">Near the Kittitas County Fairgrounds</p>
+          <dl>
+            <dt>Best time</dt><dd>Labor Day weekend, during the fair and rodeo</dd>
+            <dt>Usually stocked</dt><dd>Westerns, history, local Kittitas Valley books</dd>
+          </dl>
+          <p class="rating">Difficulty <span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span> &nbsp; Terrain <span class="stars">&#9733;&#9733;&#9734;&#9734;&#9734;</span></p>
+          <p class="hint"><strong>Hint:</strong> Shaped like a tiny red barn.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ========== TREASURES / AUTHORS SHELF ========== -->
+    <section id="treasures" class="treasures">
+      <h2 class="section-title"><span>Treasures You Might Find</span></h2>
+      <p class="section-intro">Every stand is a surprise. Here are the kinds of books, and authors, that turn up on the trail.</p>
+
+      <div class="book-gallery">
+        <figure class="book-card book-card--horror">
+          <img src="https://images.unsplash.com/photo-1623771702528-560e89b7b556?auto=format&fit=crop&w=600&h=750&q=70" alt="Books lined up on a brown wooden shelf." loading="lazy">
+          <figcaption><span class="genre">Horror</span><span class="authors">Stephen King &middot; <em>Pet Sematary</em></span></figcaption>
+        </figure>
+        <figure class="book-card book-card--classic">
+          <img src="https://images.unsplash.com/photo-1491841651911-c44c30c34548?auto=format&fit=crop&w=600&h=750&q=70" alt="A stack of six brown leather hardbound books." loading="lazy">
+          <figcaption><span class="genre">Classics</span><span class="authors">Jane Austen &middot; Louisa May Alcott</span></figcaption>
+        </figure>
+        <figure class="book-card book-card--fantasy">
+          <img src="https://images.unsplash.com/photo-1680923180435-d13edff72805?auto=format&fit=crop&w=600&h=750&q=70" alt="A stack of books sitting on a wooden shelf." loading="lazy">
+          <figcaption><span class="genre">Fantasy</span><span class="authors">J.R.R. Tolkien &middot; <em>The Hobbit</em></span></figcaption>
+        </figure>
+        <figure class="book-card book-card--mystery">
+          <img src="https://images.unsplash.com/photo-1470984968366-39a03132fd26?auto=format&fit=crop&w=600&h=750&q=70" alt="Stacks of second-hand books at a market." loading="lazy">
+          <figcaption><span class="genre">Mystery</span><span class="authors">Agatha Christie</span></figcaption>
+        </figure>
+        <figure class="book-card book-card--gothic">
+          <img src="https://images.unsplash.com/photo-1529590003495-b2646e2718bf?auto=format&fit=crop&w=600&h=750&q=70" alt="A pile of worn vintage books." loading="lazy">
+          <figcaption><span class="genre">Gothic</span><span class="authors">Mary Shelley &middot; Bram Stoker</span></figcaption>
+        </figure>
+        <figure class="book-card book-card--cottage">
+          <img src="https://images.unsplash.com/photo-1759317700289-2f4be8f9b1db?auto=format&fit=crop&w=600&h=750&q=70" alt="A row of old books against a soft background." loading="lazy">
+          <figcaption><span class="genre">Cottage Reads</span><span class="authors">L.M. Montgomery &middot; <em>Anne of Green Gables</em></span></figcaption>
+        </figure>
+      </div>
+
+      <ul class="finds">
+        <li><span class="find-icon" aria-hidden="true">&#10047;</span> Fresh flowers with kind notes</li>
+        <li><span class="find-icon" aria-hidden="true">&#9749;</span> Mugs that need a new home</li>
+        <li><span class="find-icon" aria-hidden="true">&#9733;</span> Stickers, bookmarks &amp; tiny gifts</li>
+      </ul>
+    </section>
+
+    <!-- ========== ETIQUETTE ========== -->
+    <section id="etiquette" class="etiquette">
+      <h2 class="section-title"><span>Trail Rules</span></h2>
+      <ol class="rules">
+        <li><strong>Take one, leave one.</strong> Keep the shelves full for the next explorer.</li>
+        <li><strong>Leave it nicer than you found it.</strong> Straighten the books and close the door.</li>
+        <li><strong>Small gifts are welcome.</strong> Flowers, notes, and stickers make someone's day.</li>
+        <li><strong>Sign the log.</strong> If there's a notebook inside, tell the next person what you found.</li>
+      </ol>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <p>Made with love in Ellensburg, WA &middot; IT-248 Website Design Project</p>
+    <p class="small">Locations and coordinates are mock data for a class project.</p>
+    <p class="small credits">
+      Book photos from <a href="https://unsplash.com">Unsplash</a> by
+      <a href="https://unsplash.com/@niharbhagat">Nihar Bhagat</a>,
+      <a href="https://unsplash.com/@alisaanton">Alisa Anton</a>,
+      <a href="https://unsplash.com/@mary_skr">Mary Skrynnikova</a>,
+      <a href="https://unsplash.com/@matthew_michael">Matthew Michael</a>,
+      <a href="https://unsplash.com/@theamazingdjw">Dan Wayman</a>,
+      <a href="https://unsplash.com/@chrislawton">Chris Lawton</a>,
+      <a href="https://unsplash.com/@mattgyver">Matt Benson</a>,
+      <a href="https://unsplash.com/@all_bong">All Bong</a>,
+      <a href="https://unsplash.com/@anniespratt">Annie Spratt</a> &amp;
+      <a href="https://unsplash.com/@alexisnthere_">Alex Beauchamp</a>.
+    </p>
+  </footer>
+
+</body>
+</html>
